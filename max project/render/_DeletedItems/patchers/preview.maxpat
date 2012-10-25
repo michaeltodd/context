@@ -7,7 +7,7 @@
 			"revision" : 7
 		}
 ,
-		"rect" : [ 1120.0, 251.0, 1063.0, 596.0 ],
+		"rect" : [ 151.0, 147.0, 321.0, 236.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 10.0,
@@ -27,6 +27,18 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "to pwindow",
+					"id" : "obj-262",
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 30.0, 135.0, 25.0, 25.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"comment" : "to-metro",
 					"id" : "obj-74",
@@ -3126,7 +3138,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1140.0, 306.0, 215.0, 18.0 ],
+					"patching_rect" : [ 1140.0, 351.0, 215.0, 18.0 ],
 					"text" : "jit.gl.text2d @position -1. 0.8 0.",
 					"varname" : "text_previewfps[1]"
 				}
@@ -3179,7 +3191,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 332.0, 375.0, 25.0, 25.0 ],
+					"patching_rect" : [ 310.0, 411.0, 25.0, 25.0 ],
 					"varname" : "from-window"
 				}
 
@@ -3315,7 +3327,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 684.0, 290.0, 166.0, 63.0 ],
+					"patching_rect" : [ 684.0, 306.0, 166.0, 63.0 ],
 					"text" : "jit.gl.text2d @align 1 @transform_reset 2 @position 0. 0. 0. @color 0.9 0.9 0.9 1. @blend_enable 1",
 					"varname" : "text_fps[5]"
 				}
@@ -3330,7 +3342,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 15.0, 147.0, 83.0, 18.0 ],
+					"patching_rect" : [ 15.0, 117.0, 83.0, 18.0 ],
 					"text" : "loadmess fsaa 1"
 				}
 
@@ -3343,9 +3355,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 15.0, 165.0, 336.0, 200.0 ],
+					"patching_rect" : [ 15.0, 171.0, 320.0, 240.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 285.0, 167.5 ],
+					"presentation_rect" : [ 0.0, 0.0, 320.0, 240.0 ],
 					"varname" : "pwindow"
 				}
 
@@ -3482,7 +3494,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 900.0, 306.0, 215.0, 18.0 ],
+					"patching_rect" : [ 900.0, 351.0, 215.0, 18.0 ],
 					"text" : "jit.gl.text2d @position -1. 0.9 0.",
 					"varname" : "text_previewfps"
 				}
@@ -3510,8 +3522,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 684.0, 33.0, 659.0, 16.0 ],
-					"text" : "font Courier New, size 10, color 1. 1. 1. 1., transform_reset 2, align 0, blend_enable 1, anchor 0. -0.02 0."
+					"patching_rect" : [ 684.0, 33.0, 539.0, 16.0 ],
+					"text" : "font Courier New, size 10, color 1. 1. 1. 1., transform_reset 2, align 0, blend_enable 1"
 				}
 
 			}
@@ -3521,11 +3533,11 @@
 					"fontsize" : 10.0,
 					"id" : "obj-15",
 					"maxclass" : "newobj",
-					"numinlets" : 9,
+					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
-					"patching_rect" : [ 15.0, 90.0, 557.0, 18.0 ],
-					"text" : "jit.gl.mesh @color 1. 1. 1. 1. @blend_enable 1 @lighting_enable 1 @smooth_shading 1 @axes 1",
+					"patching_rect" : [ 15.0, 90.0, 221.0, 18.0 ],
+					"text" : "jit.gl.gridshape @color 1. 1. 1. 1.",
 					"varname" : "pgridshape"
 				}
 
@@ -3568,8 +3580,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 332.0, 642.0, 377.0, 18.0 ],
-					"text" : "jit.gl.render @erase_mode clearcolor @erase_color 0. 0. 0. 1.",
+					"patching_rect" : [ 332.0, 642.0, 425.0, 18.0 ],
+					"text" : "jit.gl.render @erase_mode clearcolor @erase_color 0. 0. 0. 1. @axes 1",
 					"varname" : "prender"
 				}
 
@@ -4708,6 +4720,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 1467.5, 304.5, 1389.5, 304.5 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-262", 0 ]
 				}
 
 			}

@@ -2,8 +2,8 @@
 	"name" : "render",
 	"version" : 1,
 	"creationdate" : -862415910,
-	"modificationdate" : -861522047,
-	"viewrect" : [ 58.0, 239.0, 213.0, 519.0 ],
+	"modificationdate" : -860996059,
+	"viewrect" : [ 145.0, 118.0, 213.0, 519.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 1,
 	"showdependencies" : 1,
@@ -22,16 +22,6 @@
 			}
 ,
 			"euclidean-distance.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"badge.maxpat" : 			{
-				"kind" : "patcher",
-				"local" : 1
-			}
-,
-			"uc_license.maxpat" : 			{
 				"kind" : "patcher",
 				"local" : 1
 			}
